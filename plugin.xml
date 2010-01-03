@@ -1,0 +1,15 @@
+<plugin name='apns' version='0.1' grailsVersion='1.1.2 &gt; *'>
+  <author>Sebastien Arbogast</author>
+  <authorEmail>sebastien.arbogast@gmail.com</authorEmail>
+  <title>Apple Push Notification Service</title>
+  <description>\
+This plugin allows you to integrate with Apple Push Notification service to send
+push notifications to an iPhone client of your Grails application.
+</description>
+  <documentation>http://grails.org/Apns+Plugin</documentation>
+  <resources>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+  </resources>
+  <dependencies />
+</plugin>
