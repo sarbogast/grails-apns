@@ -1,4 +1,4 @@
-<plugin name='apns' version='0.3' grailsVersion='1.2 &gt; *'>
+<plugin name='apns' version='0.4' grailsVersion='1.2 &gt; *'>
   <author>Sebastien Arbogast</author>
   <authorEmail>sebastien.arbogast@gmail.com</authorEmail>
   <title>Apple Push Notification Service</title>
@@ -15,16 +15,7 @@ push notifications to an iPhone client of your Grails application.
   <dependencies>
     <resolvers>
       <resolver type='grailsPlugins' name='grailsPlugins' />
-      <resolver type='mavenLocal' />
-      <resolver type='mavenCentral' />
-      <resolver type='mavenRepo' root='http://notnoop.github.com/m2-repo' name='http://notnoop.github.com/m2-repo' m2compatbile='true' />
     </resolvers>
-    <dependency group='org.apache.mina' name='mina-core' version='2.0.0-RC1' conf='runtime' transitive='true' />
-    <dependency group='ch.qos.logback' name='logback-core' version='0.9.17' conf='runtime' transitive='true' />
-    <dependency group='org.codehaus.jackson' name='jackson-mapper-asl' version='1.4.0' conf='runtime' transitive='true' />
-    <dependency group='org.codehaus.jackson' name='jackson-core-asl' version='1.4.0' conf='runtime' transitive='true' />
-    <dependency group='org.slf4j' name='slf4j-api' version='1.5.8' conf='runtime' transitive='true' />
-    <dependency group='com.notnoop.apns' name='apns' version='0.1.2' conf='runtime' transitive='true' />
   </dependencies>
   <behavior />
 </plugin>

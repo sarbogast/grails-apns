@@ -15,10 +15,10 @@ grails.project.dependency.resolution = {
 
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
-        mavenLocal()
+        /*mavenLocal()
         mavenCentral()
         mavenRepo "http://notnoop.github.com/m2-repo"
-        //mavenRepo "http://snapshots.repository.codehaus.org"
+        //mavenRepo "http://snapshots.repository.codehaus.org"*/
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
@@ -26,12 +26,12 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-        runtime 'ch.qos.logback:logback-core:0.9.17'
+        /*runtime 'ch.qos.logback:logback-core:0.9.17'
         runtime 'org.slf4j:slf4j-api:1.5.8'
         runtime 'org.apache.mina:mina-core:2.0.0-RC1'
         runtime 'org.codehaus.jackson:jackson-mapper-asl:1.4.0'
         runtime 'org.codehaus.jackson:jackson-core-asl:1.4.0'
-        runtime 'com.notnoop.apns:apns:0.1.2'
+        runtime 'com.notnoop.apns:apns:0.1.2'*/
     }
 
 }
