@@ -1,6 +1,6 @@
 <plugin name='apns' version='0.5' grailsVersion='1.1.1 &gt; *'>
-  <author>Sebastien Arbogast</author>
-  <authorEmail>sebastien.arbogast@gmail.com</authorEmail>
+  <author>Sebastien Arbogast, Arthur Neves</author>
+  <authorEmail>sebastien.arbogast@gmail.com, arthurnn@gmail.com</authorEmail>
   <title>Apple Push Notification Service</title>
   <description>\
 This plugin allows you to integrate with Apple Push Notification service to send
