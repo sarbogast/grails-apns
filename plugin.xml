@@ -13,4 +13,5 @@ push notifications to an iPhone client of your Grails application.
     <resource>UrlMappings</resource>
   </resources>
   <dependencies />
+  <behavior />
 </plugin>
