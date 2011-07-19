@@ -1,4 +1,4 @@
-<plugin name='apns' version='0.5' grailsVersion='1.2 &gt; *'>
+<plugin name='apns' version='0.5' grailsVersion='1.1.1 &gt; *'>
   <author>Sebastien Arbogast</author>
   <authorEmail>sebastien.arbogast@gmail.com</authorEmail>
   <title>Apple Push Notification Service</title>
@@ -13,5 +13,4 @@ push notifications to an iPhone client of your Grails application.
     <resource>UrlMappings</resource>
   </resources>
   <dependencies />
-  <behavior />
 </plugin>
