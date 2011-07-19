@@ -3,7 +3,7 @@ import org.epseelon.grails.apns.ApnsFactoryBean
 
 class ApnsGrailsPlugin {
     // the plugin version
-    def version = "0.4"
+    def version = "0.5"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.2 > *"
     // the other plugins this plugin depends on
@@ -23,15 +23,13 @@ push notifications to an iPhone client of your Grails application.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/Apns+Plugin"
+    def documentation = "http://www.grails.org/plugin/apns"
 
     def doWithSpring = {
         apnsService(org.epseelon.grails.apns.ApnsFactoryBean) {
             pathToCertificate = ConfigurationHolder.config.apns.pathToCertificate
             password = ConfigurationHolder.config.apns.password
-            queued = ConfigurationHolder.config.apns.queued
             environment = ConfigurationHolder.config.apns.environment ? ApnsFactoryBean.Environment.valueOf(ConfigurationHolder.config.apns.environment.toUpperCase()) : ApnsFactoryBean.Environment.SANDBOX
-            nonBlocking = !ConfigurationHolder.config.apns.blocking
         }
     }
 

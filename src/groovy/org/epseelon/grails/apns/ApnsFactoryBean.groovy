@@ -19,17 +19,22 @@ class ApnsFactoryBean implements FactoryBean {
 
     Object getObject() {
         def apnsService = APNS.newService().withCert(pathToCertificate, password)
+		
         switch(environment){
-            case Environment.PRODUCTION: apnsService = apnsService.withProductionDestination(); break;
+            case Environment.PRODUCTION: 
+				apnsService = apnsService.withProductionDestination(); break;
             case Environment.SANDBOX:
-            default: apnsService = apnsService.withSandboxDestination(); break;
+            default: 
+				apnsService = apnsService.withSandboxDestination(); break;
         }
-        if(queued){
-            apnsService = apnsService.asQueued()
-        }
-        if(nonBlocking){
-            apnsService = apnsService.asNonBlocking()
-        }
+		
+		/*
+		 * Apns, nowadays, is just supporting Queued service. 
+		 * Was talking to the developer of the API, and he told me that furtermore
+		 * even the method asNonBlocking might be removed!
+		 */
+		  
+        apnsService = apnsService.asQueued()
 
         return apnsService.build()
     }
