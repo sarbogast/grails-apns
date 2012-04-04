@@ -12,13 +12,26 @@ class ApnsFactoryBean implements FactoryBean {
     public enum Environment{SANDBOX, PRODUCTION}
 
     String pathToCertificate
+    String certificateResourcePath
     String password
     boolean queued = false
     Environment environment = Environment.SANDBOX
     boolean nonBlocking = false
 
     Object getObject() {
-        def apnsService = APNS.newService().withCert(pathToCertificate, password)
+        def apnsService = APNS.newService()
+        if(certificateResourcePath){
+            apnsService = apnsService.withCert(this.getClass().getResourceAsStream(certificateResourcePath), password)
+        } else if(pathToCertificate){
+            apnsService = apnsService.withCert(pathToCertificate, password)
+        } else {
+            switch (environment){
+                case Environment.PRODUCTION: certificateResourcePath = "/apns-prod.p12"
+                    break
+                case Environment.SANDBOX: certificateResourcePath = "/apns-dev.p12"
+            }
+            apnsService = apnsService.withCert(this.getClass().getResourceAsStream(certificateResourcePath), password)
+        }
 		
         switch(environment){
             case Environment.PRODUCTION: 

@@ -1,11 +1,12 @@
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 import org.epseelon.grails.apns.ApnsFactoryBean
+import grails.util.Environment
 
 class ApnsGrailsPlugin {
     // the plugin version
-    def version = "0.5.3"
+    def version = "1.0"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.1.1 > *"
+    def grailsVersion = "1.3.8 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
@@ -25,10 +26,22 @@ push notifications to an iPhone client of your Grails application.
     def documentation = "http://www.grails.org/plugin/apns"
 
     def doWithSpring = {
+        def configuredEnvironment
+        if(ConfigurationHolder.config.apns.environment){
+            configuredEnvironment = ApnsFactoryBean.Environment.valueOf(ConfigurationHolder.config.apns.environment.toUpperCase())
+        } else {
+            switch(Environment.current){
+                case Environment.PRODUCTION: configuredEnvironment = ApnsFactoryBean.Environment.PRODUCTION
+                break
+                default: configuredEnvironment = ApnsFactoryBean.Environment.SANDBOX
+            }
+        }
+
         apnsService(org.epseelon.grails.apns.ApnsFactoryBean) {
-            pathToCertificate = ConfigurationHolder.config.apns.pathToCertificate
+            pathToCertificate = ConfigurationHolder.config.apns.pathToCertificate ?: null
+            certificateResourcePath = ConfigurationHolder.config.apns.certificateResourcePath ?: null
             password = ConfigurationHolder.config.apns.password
-            environment = ConfigurationHolder.config.apns.environment ? ApnsFactoryBean.Environment.valueOf(ConfigurationHolder.config.apns.environment.toUpperCase()) : ApnsFactoryBean.Environment.SANDBOX
+            environment = configuredEnvironment
         }
     }
 
