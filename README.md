@@ -5,32 +5,30 @@ Configuration
 
 Once the plugin is installed, add the following code to grails-app/Config.groovy:
 
-`
-environments {
-    development {
-        apns {
-            pathToCertificate = "/Users/sarbogast/Desktop/APNs_development_certificates.p12"
-            password = "password"
-            environment = "sandbox"
+    environments {
+        development {
+            apns {
+                pathToCertificate = "/Users/sarbogast/Desktop/APNs_development_certificates.p12"
+                password = "password"
+                environment = "sandbox"
+            }
         }
-    }
-    test {
-        apns {
-            pathToCertificate = "/usr/local/myapp/APNs_development_certificates.p12"
-            password = "password"
-            environment = "sandbox"
+        test {
+            apns {
+                pathToCertificate = "/usr/local/myapp/APNs_development_certificates.p12"
+                password = "password"
+                environment = "sandbox"
+            }
         }
-    }
 
-    production {
-        apns {
-            pathToCertificate = "/usr/local/myapp/APNs_production_certificates.p12"
-            password = "password"
-            environment = "production"
+        production {
+            apns {
+                pathToCertificate = "/usr/local/myapp/APNs_production_certificates.p12"
+                password = "password"
+                environment = "production"
+            }
         }
     }
-}
-`
 
 Of course replace certificate paths and passwords with real values for your environments. p12 files have to be exported from your Keychain access using the procedure
 described in Apple documentation [here](https://developer.apple.com/library/ios/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ProvisioningDevelopment/ProvisioningDevelopment.html).
@@ -51,37 +49,35 @@ Usage
 Once you have done that, a new "apnsService" is available in all of your controllers, services and so on, and you can use it to send push notification using java-apns API
 described [here](https://github.com/notnoop/java-apns) and [there](http://notnoop.github.com/java-apns/apidocs/index.html). For example, I personnally defined a message service like the following:
 
-`
-import com.notnoop.apns.APNS
-import com.notnoop.apns.ApnsNotification
-import com.notnoop.apns.ApnsService
-class MessageService {
+    import com.notnoop.apns.APNS
+    import com.notnoop.apns.ApnsNotification
+    import com.notnoop.apns.ApnsService
+    class MessageService {
 
-    boolean transactional = true
+        boolean transactional = true
 
-    ApnsService apnsService
+        ApnsService apnsService
 
-    def sendMessageToDevices(List<Device> recipients, String messageKey, String … arguments) {
-        recipients.each {Device device ->
-            def payload = APNS.newPayload()
-                .badge(device.messages.size())
-                .localizedKey(messageKey)
-                .localizedArguments(arguments)
-                .sound("default")
+        def sendMessageToDevices(List<Device> recipients, String messageKey, String … arguments) {
+            recipients.each {Device device ->
+                def payload = APNS.newPayload()
+                    .badge(device.messages.size())
+                    .localizedKey(messageKey)
+                    .localizedArguments(arguments)
+                    .sound("default")
 
-            if (payload.isTooLong()) log.info("Message is too long: " + payload.length())
-            try {
-                apnsService.push(new ApnsNotification(
-                        device.token,
-                        payload.build().getBytes("UTF-8"))
-                )
-            } catch (Exception e) {
-                log.error("Could not connect to APNs to send the notification")
+                if (payload.isTooLong()) log.info("Message is too long: " + payload.length())
+                try {
+                    apnsService.push(new ApnsNotification(
+                            device.token,
+                            payload.build().getBytes("UTF-8"))
+                    )
+                } catch (Exception e) {
+                    log.error("Could not connect to APNs to send the notification")
+                }
             }
         }
     }
-}
-`
 
 Remember that the sandbox environment has its down moments, so sometimes, you send a message, you don't get any exception or error message of any sort, and still your notification doesn't get through. I hope this won't happen too much in production.
 
