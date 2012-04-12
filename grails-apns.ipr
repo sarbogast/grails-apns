@@ -521,6 +521,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/grails-apns.iml" filepath="$PROJECT_DIR$/grails-apns.iml" />
       <module fileurl="file://$PROJECT_DIR$/grails-apns-grailsPlugins.iml" filepath="$PROJECT_DIR$/grails-apns-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grails-apns-grailsPlugins.iml" filepath="$PROJECT_DIR$/grails-apns-grailsPlugins.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -533,7 +534,7 @@
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="svn" />
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="atlassian-ide-plugin-workspace">
