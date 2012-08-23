@@ -39,7 +39,7 @@ If you omit the environment setting, production environment will point to APNs p
 
 If your sandbox certificate is in src/java/apns-dev.p12 and your production certificate is in src/java/apns-prod.p12, you can omit pathToCertificate. In this case, all you need to configure is apns.password.
 
-If you don't have access to your server's file system, you can also replace pathToCertificate by certificateResourcePath and set it to the path of your certificate, relative to src/java. So for example, if your certificate is in src/java/mycert.p12, you can set certificateResourcePath=mycert.p12.
+If you don't have access to your server's file system, you can also replace pathToCertificate by certificateResourcePath and set it to the path of your certificate, relative to src/java. So for example, if your certificate is in src/java/mycert.p12, you can set certificateResourcePath="/mycert.p12".
 
 This new configuration system is way better for Heroku deployment.
 
