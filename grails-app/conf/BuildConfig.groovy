@@ -13,13 +13,13 @@ grails.project.dependency.resolution = {
         grailsPlugins()
         grailsHome()
 
-        //mavenCentral()
+        mavenCentral()
 
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
-        /*mavenLocal()
-         //mavenRepo "https://oss.sonatype.org/content/repositories/snapshots/"
-         //mavenRepo "http://snapshots.repository.codehaus.org"*/
+        mavenLocal()
+        //mavenRepo "https://oss.sonatype.org/content/repositories/snapshots/"
+        //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
@@ -38,6 +38,12 @@ grails.project.dependency.resolution = {
         //      compile 'org.codehaus.jackson:jackson-mapper-asl:1.4.0'
 
         compile 'com.notnoop.apns:apns:0.2.3'
+    }
+
+    plugins {
+        build(':release:2.2.1', ':rest-client-builder:1.0.3') {
+            export = false
+        }
     }
 
 }

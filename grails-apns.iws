@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-apns-1.0.zip" afterPath="$PROJECT_DIR$/grails-apns-1.0.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApnsGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/ApnsGrailsPlugin.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-apns-1.1.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/c.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/c.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/fmt.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/fmt.tld" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-apns.iml" afterPath="$PROJECT_DIR$/grails-apns.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-apns.ipr" afterPath="$PROJECT_DIR$/grails-apns.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-apns.iws" afterPath="$PROJECT_DIR$/grails-apns.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" />
     </list>
     <ignored path="grails-apns.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
     <ignored path="grails-apns-grailsPlugins.iml" />
-    <file path="/Dummy.txt" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379272487051" ignored="false" />
-    <file path="/BuildConfig.groovy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379260289344" ignored="false" />
+    <file path="/Dummy.txt" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379277183332" ignored="false" />
+    <file path="/BuildConfig.groovy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379276832227" ignored="false" />
     <file path="/ApnsGrailsPlugin.groovy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379260400756" ignored="false" />
     <file path="$PROJECT_DIR$/../chapter4/chapter4/grails-app/conf/BuildConfig.groovy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379260541871" ignored="false" />
-    <file path="/a.dummy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379272480364" ignored="false" />
+    <file path="/a.dummy" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379277178768" ignored="false" />
     <file path="$PROJECT_DIR$/../chapter4/chapter4/web-app/WEB-INF/applicationContext.xml" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379262850278" ignored="false" />
     <file path="$PROJECT_DIR$/../chapter4/chapter4/web-app/WEB-INF/sitemesh.xml" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379262850279" ignored="false" />
     <file path="$PROJECT_DIR$/../chapter4/chapter4/application.properties" changelist="4a8f97fd-6a87-47e8-bcaa-04caaaf3458e" time="1379262850279" ignored="false" />
@@ -99,7 +93,7 @@
       <file leaf-file-name="ApnsGrailsPlugin.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApnsGrailsPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+            <state line="24" column="54" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -107,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApnsFactoryBean.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApnsFactoryBean.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/groovy/org/epseelon/grails/apns/ApnsFactoryBean.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="223" selection-end="223" vertical-scroll-proportion="0.15966387">
+            <state line="10" column="6" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#34#86#0" expanded="true" />
               </folding>
@@ -127,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="45" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
+            <state line="21" column="62" selection-start="867" selection-end="867" vertical-scroll-proportion="0.44088396">
               <folding />
             </state>
           </provider>
@@ -156,8 +150,8 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/application.properties" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/ApnsGrailsPlugin.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       </list>
     </option>
   </component>
@@ -425,7 +419,7 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -435,11 +429,11 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
@@ -465,7 +459,7 @@
     <frame x="0" y="22" width="2560" height="1338" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23451693" sideWeight="0.8670382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23399015" sideWeight="0.8670382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -478,7 +472,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18536197" sideWeight="0.6740558" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18536197" sideWeight="0.76600987" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -609,28 +603,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/org/epseelon/grails/apns/ApnsFactoryBean.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="45" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="10" column="6" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#34#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApnsGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+        <state line="24" column="54" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/org/epseelon/grails/apns/ApnsFactoryBean.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="223" selection-end="223" vertical-scroll-proportion="0.15966387">
-          <folding>
-            <element signature="e#34#86#0" expanded="true" />
-          </folding>
+        <state line="21" column="62" selection-start="867" selection-end="867" vertical-scroll-proportion="0.44088396">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,8 +635,8 @@
         <entry key="grails-apns">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="1837365269" />
-              <option name="pluginDependenciesCrc" value="-418213190" />
+              <option name="buildConfigCrc" value="-751816982" />
+              <option name="pluginDependenciesCrc" value="1689266771" />
               <option name="properties">
                 <map>
                   <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.2.4/global-plugins" />
