@@ -17,6 +17,7 @@ class ApnsFactoryBean implements FactoryBean {
     boolean queued = false
     Environment environment = Environment.SANDBOX
     boolean nonBlocking = false
+    def delegateBean
 
     Object getObject() {
         def apnsService = APNS.newService()
@@ -48,6 +49,10 @@ class ApnsFactoryBean implements FactoryBean {
 		 */
 		  
         apnsService = apnsService.asQueued()
+
+        if( delegateBean ) {
+            apnsService = apnsService.withDelegate( delegateBean )
+        }
 
         return apnsService.build()
     }

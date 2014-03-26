@@ -41,6 +41,10 @@ push notifications to an iPhone client of your Grails application.
             certificateResourcePath = application.config.apns.certificateResourcePath ?: null
             password = application.config.apns.password
             environment = configuredEnvironment
+            if ( application.config.apns.delegateBean ) {
+                log.debug "Using delegate ${application.config.apns.delegateBean}"
+                delegateBean = ref( application.config.apns.delegateBean )
+            }
         }
     }
 
