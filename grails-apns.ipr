@@ -37,14 +37,14 @@
       </profile>
     </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DBNavigator.Project.ConnectionManager">
     <connections />
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
-    <record-editor-column-sorting value="INDEXED" />
+    <record-view-column-sorting-type value="BY_INDEX" />
+    <value-preview-text-wrapping value="false" />
+    <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
     <export-instructions>
@@ -56,18 +56,21 @@
       <file-location value="" />
       <scope value="GLOBAL" />
       <destination value="FILE" />
-      <processor value="EXCEL" />
+      <format value="EXCEL" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
-    <group-history-entries value="false" />
     <method-browser />
-    <execution-inputs />
+    <execution-history>
+      <group-entries value="false" />
+      <execution-inputs />
+    </execution-history>
   </component>
   <component name="DBNavigator.Project.Settings">
     <browser-settings>
@@ -135,13 +138,31 @@
         </lookup-objects>
         <force-database-load value="false" />
         <prompt-connection-selection value="true" />
+        <prompt-schema-selection value="true" />
       </lookup-filters>
     </navigation-settings>
+    <dataset-grid-settings>
+      <tracking-columns>
+        <columnNames value="" />
+        <visible value="true" />
+        <editable value="false" />
+      </tracking-columns>
+      <sorting>
+        <nulls-first value="true" />
+        <max-sorting-columns value="4" />
+      </sorting>
+    </dataset-grid-settings>
     <dataset-editor-settings>
-      <text-editor-popup active="true" active-if-empty="false" data-length-threshold="100" delay="1000" />
+      <text-editor-popup>
+        <active value="false" />
+        <active-if-empty value="false" />
+        <data-length-threshold value="100" />
+        <popup-delay value="1000" />
+      </text-editor-popup>
       <values-list-popup>
         <active-for-primary-keys value="false" />
-        <threshold-upper-limit value="1000" />
+        <element-count-threshold value="1000" />
+        <data-length-threshold value="250" />
       </values-list-popup>
       <general>
         <fetch-block-size value="100" />
@@ -149,6 +170,7 @@
         <trim-whitespaces value="true" />
         <convert-empty-strings-to-null value="true" />
         <select-content-on-cell-edit value="true" />
+        <large-value-preview-active value="true" />
       </general>
       <filters>
         <prompt-filter-dialog value="true" />
@@ -168,7 +190,6 @@
           <content-type name="PL/SQL" enabled="true" />
           <content-type name="JPA QL" enabled="true" />
           <content-type name="JavaScript" enabled="true" />
-          <content-type name="PHP" enabled="true" />
           <content-type name="JSP" enabled="true" />
           <content-type name="JSPx" enabled="true" />
           <content-type name="Groovy" enabled="true" />
@@ -183,6 +204,9 @@
           <content-type name="Manifest" enabled="true" />
         </content-types>
       </qualified-text-editor>
+      <record-navigation>
+        <navigation-target value="VIEWER" />
+      </record-navigation>
     </dataset-editor-settings>
     <code-completion-settings>
       <filters>
@@ -245,7 +269,7 @@
             <filter-element type="OBJECT" id="dblink" selected="true" />
           </any-schema>
         </basic-filter>
-        <smart-filter>
+        <extended-filter>
           <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
           <filter-element type="RESERVED_WORD" id="function" selected="true" />
           <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
@@ -303,7 +327,7 @@
             <filter-element type="OBJECT" id="cluster" selected="true" />
             <filter-element type="OBJECT" id="dblink" selected="true" />
           </any-schema>
-        </smart-filter>
+        </extended-filter>
       </filters>
       <sorting enabled="true">
         <sorting-element type="RESERVED_WORD" id="keyword" />
@@ -333,6 +357,11 @@
       <statement-execution>
         <fetch-block-size value="100" />
         <execution-timeout value="20" />
+        <focus-result value="false" />
+      </statement-execution>
+      <statement-execution>
+        <execution-timeout value="20" />
+        <debug-execution-timeout value="600" />
       </statement-execution>
       <compiler>
         <compile-type value="KEEP" />
@@ -356,6 +385,8 @@
         <statement-postfix value="/" />
         <lookup-ddl-files value="true" />
         <create-ddl-files value="false" />
+        <use-qualified-names value="false" />
+        <make-scripts-rerunnable value="true" />
       </general>
     </ddl-file-settings>
     <general-settings>
@@ -363,7 +394,23 @@
         <date-format value="MEDIUM" />
         <number-format value="UNGROUPED" />
         <locale value="SYSTEM_DEFAULT" />
+        <use-custom-formats value="false" />
       </regional-settings>
+      <environment>
+        <environment-types>
+          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" />
+          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" />
+          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" />
+          <environment-type id="other" name="Other" description="" color="-1576/-10724543" />
+        </environment-types>
+        <visibility-settings>
+          <connection-tabs value="true" />
+          <dialog-headers value="true" />
+          <object-editor-tabs value="true" />
+          <script-editor-tabs value="false" />
+          <execution-result-tabs value="true" />
+        </visibility-settings>
+      </environment>
     </general-settings>
   </component>
   <component name="DependencyValidationManager">
@@ -530,7 +577,7 @@
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.7 (1)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
