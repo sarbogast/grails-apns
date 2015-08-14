@@ -37,7 +37,7 @@ grails.project.dependency.resolution = {
         //		runtime 'org.apache.mina:mina-core:2.0.0-RC1'
         //      compile 'org.codehaus.jackson:jackson-mapper-asl:1.4.0'
 
-        compile 'com.notnoop.apns:apns:1.0.0.Beta4'
+        compile 'com.notnoop.apns:apns:1.0.0.Beta6'
     }
 
     plugins {
