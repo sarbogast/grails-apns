@@ -43,6 +43,15 @@ If you don't have access to your server's file system, you can also replace path
 
 This new configuration system is way better for Heroku deployment.
 
+You can configure a bean to be notified by sent event via the option "delegateBean". This bean must implement the interface com.notnoop.apns.ApnsDelegate.
+
+       apns {
+            pathToCertificate = "/usr/local/myapp/APNs_production_certificates.p12"
+            password = "password"
+            environment = "production"
+            delegateBean = "apnsDelegateService"
+       }
+
 Usage
 =====
 
