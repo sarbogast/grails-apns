@@ -1,0 +1,7 @@
+*.log
+.settings
+/*.zip
+/plugin.xml
+/web-app
+target
+/.idea/
